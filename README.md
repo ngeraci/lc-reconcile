@@ -1,6 +1,6 @@
 ##About
 
-This fork of [cm2166](https://github.com/cmh2166)'s OpenRefine reconciliation service adds the ability to reconcile Library of Congress Genre/Form Terms in addition to subject headings and name authorities available via [id.loc.gov](http://id.loc.gov). 
+This fork of [Christina Harlow](https://github.com/cmh2166)'s OpenRefine reconciliation service adds the ability to reconcile Library of Congress Genre/Form Terms in addition to subject headings and name authorities available via [id.loc.gov](http://id.loc.gov). 
 
 * Like the original version, this is by a metadata librarian filling an immediate project need. 
 * Tested on python 2.7.12; works but expect bugs. 
