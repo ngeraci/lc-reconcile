@@ -2,15 +2,18 @@
 
 This fork of [cm2166](https://github.com/cmh2166)'s OpenRefine reconciliation service adds the ability to reconcile Library of Congress Genre/Form Terms in addition to subject headings and name authorities available via [id.loc.gov](http://id.loc.gov). 
 
-Like the original version, this is by a metadata librarian filling an immediate project need. Tested on python 2.7.12; works but expect bugs. In particular, it seems like using the general "LoC" option may not consistently include the genre/form terms. For reconciling to genre/form terms, choose reconciliation type "genreForm" in step 10 below.
+* Like the original version, this is by a metadata librarian filling an immediate project need. 
+* Tested on python 2.7.12; works but expect bugs. 
+	**In particular, it seems like using the general "LoC" option may not consistently include the genre/form terms. 
+	**To reconcile to genre/form terms with certainty, choose reconciliation type "genreForm" in step 10 below.
 
-There is no hosted option for this version: follow instructions below to run locally. 
+This version has no hosted version and must be run locally.
 
 ##Run Locally Instructions
 
 Runs directly on localhost:5000 (no /reconcile needed for this recon service)
 
-Before getting started, you'll need python on your computer (this was built with python 2.7.8, updated to work with python3.4, most recently tested and worked with python 2.7.10 and 3.4.3) and be comfortable using LODRefine/OpenRefine/Google Refine.
+Before getting started, you'll need python on your computer (original built with python 2.7.8 and updated to work with python3.4, this version edited with python 2.7.12) and be comfortable using LODRefine/OpenRefine/Google Refine.
 
 1. Clone/download/get a copy of this code repository on your computer.
 2. In the Command Line Interface, change to the directory where you downloaded this code: `cd directory/with/code/`
