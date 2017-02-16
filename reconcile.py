@@ -32,7 +32,7 @@ except ImportError:
 # Map the LoC query indexes to service types
 default_query = {
     "id": "LoC",
-    "name": "LCNAF & LCSH",
+    "name": "LCNAF & LCSH & LCGFT",
     "index": "/authorities"
 }
 
@@ -46,6 +46,11 @@ refine_to_lc = [
         "id": "Subjects",
         "name": "Library of Congress Subject Headings",
         "index": "/authorities/subjects"
+    },
+    {
+        "id": "genreForms",
+        "name": "Library of Congress Genre/Form Terms",
+        "index": "/authorities/genreForms"
     }
 ]
 refine_to_lc.append(default_query)
@@ -126,9 +131,12 @@ def search(raw_query, query_type='/lc'):
             if PY3:
                 url = 'http://id.loc.gov/authorities/names/didyoumean/?label=' + urllib.parse.quote(query.encode('utf8'))
                 url2 = 'http://id.loc.gov/authorities/subjects/didyoumean/?label=' + urllib.parse.quote(query.encode('utf8'))
+                url3 = 'http://id.loc.gov/authorities/genreForms/didyoumean/?label=' + urllib.parse.quote(query.encode('utf8'))
             else:
                 url = 'http://id.loc.gov/authorities/names/didyoumean/?label=' + urllib.quote(query.encode('utf8'))
                 url2 = 'http://id.loc.gov/authorities/subjects/didyoumean/?label=' + urllib.quote(query.encode('utf8'))
+                url3 = 'http://id.loc.gov/authorities/genreForms/didyoumean/?label=' + urllib.quote(query.encode('utf8'))
+
             app.logger.debug("LC Authorities API url is " + url)
             app.logger.debug("LC Authorities API url is " + url2)
             altresp = requests.get(url)
