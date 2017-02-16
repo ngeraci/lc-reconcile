@@ -4,8 +4,8 @@ This fork of [Christina Harlow](https://github.com/cmh2166)'s OpenRefine reconci
 
 * Like the original version, this is by a metadata librarian filling an immediate project need. 
 * Tested on python 2.7.12; works but expect bugs. 
-	*In particular, it seems like using the general "LoC" option may not consistently include the genre/form terms. 
-	*To reconcile to genre/form terms with certainty, choose reconciliation type "genreForm" in step 10 below.
+	* In particular, it seems like using the general "LoC" option may not consistently include the genre/form terms. 
+	* To reconcile to genre/form terms with certainty, choose reconciliation type "genreForm" in step 10 below.
 
 This version has no hosted version and must be run locally.
 
